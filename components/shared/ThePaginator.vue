@@ -17,8 +17,8 @@
         :class="{ 'pagination-button--active': currentPage === page }"
         @click="$emit('setPage', page)"
       >
-        {{ page }}</Button
-      >
+        {{ page }}
+      </Button>
     </template>
 
     <div v-show="!isEndList" class="paginator__rewinder">
