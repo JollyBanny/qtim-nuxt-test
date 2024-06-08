@@ -1,0 +1,14 @@
+{
+  "editor.foldingImportsByDefault": true,
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "editor.useTabStops": false,
+  "files.exclude": {
+    "dist": true,
+    "node_modules": true,
+    "package-lock.json": true,
+    "yarn.lock": true
+  },
+  "css.customData": [".vscode/tailwind.json"],
+  "scss.lint.emptyRules": "ignore"
+}

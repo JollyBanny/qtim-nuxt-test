@@ -1,0 +1,10 @@
+.page {
+  &__container {
+    @apply mx-auto;
+    max-width: 76rem;
+  }
+
+  &__title {
+    font-size: 5.25rem;
+  }
+}

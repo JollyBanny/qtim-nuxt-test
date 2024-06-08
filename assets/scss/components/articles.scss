@@ -1,0 +1,66 @@
+.articles {
+  &__gallery {
+    @apply grid grid-cols-4 mt-14 mb-12 gap-x-8 gap-y-10;
+  }
+
+  &__paginator {
+    @apply mb-36;
+  }
+}
+
+.article {
+  &__title {
+    margin-top: 7.5rem;
+    margin-bottom: 4.5rem;
+    font-size: 5.25rem;
+    line-height: 1;
+  }
+
+  &__image {
+    img {
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+
+  &__content {
+    @apply my-20;
+    max-width: 43.5rem;
+  }
+
+  &__description {
+    @apply mt-8 text-4xl;
+  }
+}
+
+.article-card {
+  @apply relative text-xl;
+
+  width: 17.5rem;
+  transition: transform 0.3s, z-index 0.3s;
+
+  &__image {
+    img {
+      object-fit: cover;
+      width: 17.5rem;
+      height: 17.5rem;
+    }
+  }
+
+  &__content {
+    @apply mt-6;
+  }
+
+  &__more {
+    @apply hidden text-secondary-500;
+  }
+
+  &:hover {
+    @apply -translate-y-10 z-[1];
+
+    .article-card__more {
+      @apply absolute block;
+      padding-top: 0.75rem;
+    }
+  }
+}

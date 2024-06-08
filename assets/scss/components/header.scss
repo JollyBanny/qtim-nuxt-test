@@ -1,0 +1,32 @@
+.header {
+  @apply sticky top-0 px-10 bg-neutral-100 z-10;
+
+  &__container {
+    @apply flex items-center mx-auto py-8;
+    max-width: 85rem;
+  }
+
+  &__logo {
+    @apply mr-auto;
+  }
+
+  &__menu {
+    @apply hidden mr-24 space-x-14 text-xl;
+
+    @media (min-width: 720px) {
+      @apply block;
+    }
+  }
+
+  &__buttons {
+    @apply flex items-center;
+  }
+
+  &__locale {
+    @apply mr-4;
+  }
+
+  &__letswork {
+    @apply px-8 rounded-full bg-neutral-900 text-xl text-neutral-100;
+  }
+}
